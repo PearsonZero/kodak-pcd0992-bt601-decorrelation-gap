@@ -19,7 +19,7 @@ This repository contains the first per-image measurement of how much inter-chann
 |Mean decorrelation efficiency    |55.4% of KLT optimum             |
 |Mean residual correlation (YCbCr)|0.372                            |
 |Efficiency range across images   |31.5% – 82.3%                    |
-|Cb–Cr residual mean |r|          |0.616                            |
+| Cb–Cr residual mean \|r\| | 0.616 |
 |Cb–Cr residual range             |0.299 – 0.934                    |
 |4:2:0 PSNR range                 |39.91 – 47.91 dB (8.00 dB spread)|
 |Cb–Cr is dominant residual in    |23 of 24 images                  |
