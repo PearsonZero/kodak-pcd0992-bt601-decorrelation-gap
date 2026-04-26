@@ -1,0 +1,140 @@
+{
+  "image_id": "kodim08",
+  "filename": "kodim08.png",
+  "dimensions": {
+    "width": 768,
+    "height": 512
+  },
+  "bit_depth": 24,
+  "pixels": 393216,
+  "rgb_channel_statistics": {
+    "R": {
+      "mean": 127.96,
+      "std": 63.74,
+      "min": 0,
+      "max": 255
+    },
+    "G": {
+      "mean": 121.08,
+      "std": 65.29,
+      "min": 0,
+      "max": 255
+    },
+    "B": {
+      "mean": 116.0,
+      "std": 57.39,
+      "min": 0,
+      "max": 255
+    }
+  },
+  "rgb_pairwise_correlations": {
+    "R_G": 0.96646,
+    "R_B": 0.916208,
+    "G_B": 0.974616,
+    "avg_abs_r": 0.952428
+  },
+  "pca_decomposition": {
+    "covariance_matrix": [
+      [
+        4062.6065,
+        4022.2107,
+        3351.2393
+      ],
+      [
+        4022.2107,
+        4263.4142,
+        3651.9205
+      ],
+      [
+        3351.2393,
+        3651.9205,
+        3293.1999
+      ]
+    ],
+    "eigenvalues": [
+      11265.8584,
+      310.1984,
+      43.1638
+    ],
+    "eigenvectors": [
+      [
+        -0.587873,
+        -0.612978,
+        -0.527885
+      ],
+      [
+        -0.726492,
+        0.113014,
+        0.677817
+      ],
+      [
+        0.355829,
+        -0.781975,
+        0.511762
+      ]
+    ],
+    "variance_explained_pct": [
+      96.96,
+      2.67,
+      0.37
+    ],
+    "condition_number": 261.0,
+    "blue_independence_pct": 4.7,
+    "pc1_dominant": "G (0.61)",
+    "eigenvalue_ratios": {
+      "pc1_pc2": 36.32,
+      "pc2_pc3": 7.19
+    }
+  },
+  "dimensionality_tier": "Strongly one-dimensional",
+  "ycbcr_channel_statistics": {
+    "Y": {
+      "mean": 122.56,
+      "std": 63.28,
+      "min": 0.0,
+      "max": 255.0
+    },
+    "Cb": {
+      "mean": 124.3,
+      "std": 9.01,
+      "min": 90.4,
+      "max": 151.94
+    },
+    "Cr": {
+      "mean": 131.86,
+      "std": 8.77,
+      "min": 98.39,
+      "max": 173.57
+    }
+  },
+  "ycbcr_residual_correlations": {
+    "Y_Cb": -0.477922,
+    "Y_Cr": -0.05959,
+    "Cb_Cr": -0.628992,
+    "avg_abs_r": 0.388835
+  },
+  "decorrelation_gap": {
+    "Y_Cb": -0.477922,
+    "Y_Cr": -0.05959,
+    "Cb_Cr": -0.628992,
+    "avg_abs_gap": 0.388835,
+    "interpretation": "Residual correlation left by BT.601 fixed transform (KLT ceiling = 0.000000)"
+  },
+  "chroma_subsampling_420": {
+    "psnr_overall_dB": 42.75,
+    "psnr_per_channel_dB": {
+      "R": 42.34,
+      "G": 47.62,
+      "B": 40.77
+    },
+    "method": "BT.601 RGB->YCbCr, 2x box downsample Cb/Cr, nearest upsample, BT.601 inverse",
+    "interpretation": "Information loss from standard 4:2:0 chroma subsampling"
+  },
+  "methodology": {
+    "pca_baseline": "Baetzel (2026) - Statistical Characterization of Inter-Channel Redundancy Structure",
+    "ycbcr_transform": "ITU-R BT.601 fixed coefficients (JPEG standard)",
+    "klt_ceiling": "Residual inter-channel correlation = 0.000000 by construction",
+    "software": "Python 3, NumPy, Pillow",
+    "computed_from": "Raw 8-bit RGB pixel values, no preprocessing"
+  }
+}

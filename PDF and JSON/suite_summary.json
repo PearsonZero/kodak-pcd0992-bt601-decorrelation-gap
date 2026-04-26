@@ -1,0 +1,112 @@
+{
+  "suite": "Kodak Lossless True Color Image Suite (PCD0992)",
+  "images_analyzed": 24,
+  "rgb_correlation": {
+    "mean_avg_abs_r": 0.8483,
+    "min": 0.5203,
+    "max": 0.9768
+  },
+  "ycbcr_residual_correlation": {
+    "mean_avg_abs_r": 0.372,
+    "min": 0.1498,
+    "max": 0.6691
+  },
+  "decorrelation_gap": {
+    "mean": 0.372,
+    "min": 0.1498,
+    "max": 0.6691,
+    "definition": "Residual avg |r| after BT.601 YCbCr transform (KLT ceiling = 0)"
+  },
+  "chroma_subsampling_420_psnr": {
+    "mean_dB": 43.9,
+    "min_dB": 39.91,
+    "max_dB": 47.91
+  },
+  "per_tier_summary": {
+    "Three-dimensional": {
+      "images": [
+        "kodim02",
+        "kodim03",
+        "kodim23"
+      ],
+      "count": 3,
+      "mean_gap": 0.297,
+      "mean_420_psnr_dB": 42.9,
+      "gap_range": [
+        0.1966,
+        0.3989
+      ]
+    },
+    "Two-dimensional": {
+      "images": [
+        "kodim14"
+      ],
+      "count": 1,
+      "mean_gap": 0.4297,
+      "mean_420_psnr_dB": 39.91,
+      "gap_range": [
+        0.4297,
+        0.4297
+      ]
+    },
+    "Weakly one-dimensional": {
+      "images": [
+        "kodim04",
+        "kodim05",
+        "kodim07",
+        "kodim09",
+        "kodim11",
+        "kodim18",
+        "kodim21",
+        "kodim22"
+      ],
+      "count": 8,
+      "mean_gap": 0.3551,
+      "mean_420_psnr_dB": 43.73,
+      "gap_range": [
+        0.1498,
+        0.5663
+      ]
+    },
+    "Strongly one-dimensional": {
+      "images": [
+        "kodim01",
+        "kodim08",
+        "kodim10",
+        "kodim12",
+        "kodim15",
+        "kodim16",
+        "kodim19"
+      ],
+      "count": 7,
+      "mean_gap": 0.4085,
+      "mean_420_psnr_dB": 45.25,
+      "gap_range": [
+        0.3497,
+        0.483
+      ]
+    },
+    "Near-degenerate": {
+      "images": [
+        "kodim06",
+        "kodim13",
+        "kodim17",
+        "kodim20",
+        "kodim24"
+      ],
+      "count": 5,
+      "mean_gap": 0.381,
+      "mean_420_psnr_dB": 43.68,
+      "gap_range": [
+        0.2091,
+        0.6691
+      ]
+    }
+  },
+  "methodology": {
+    "pca_baseline": "Baetzel (2026)",
+    "ycbcr_transform": "ITU-R BT.601",
+    "subsampling": "4:2:0 box downsample + nearest upsample",
+    "software": "Python 3, NumPy, Pillow"
+  }
+}
