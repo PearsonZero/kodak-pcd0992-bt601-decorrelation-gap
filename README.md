@@ -65,6 +65,30 @@ No proprietary tools, no trained models, no parameters to tune. Every value is d
 
 **This paper** measures what BT.601 actually achieves against those ceilings and documents the structure of what it leaves behind.
 
+## Reproducing These Results
+
+### Requirements
+
+- Python 3.8+
+- NumPy
+- Pillow
+
+### Installation
+
+```pip install numpy Pillow```
+
+### Usage
+
+Download the 24 Kodak PNGs from http://r0k.us/graphics/kodak/ and run:
+
+```python paper2_bt601_decorrelation_gap.py --input-dir ./kodak_images --output-dir ./results```
+
+The script replicates the Paper 1 PCA baselines, computes BT.601 residual correlations, decorrelation efficiency, and 4:2:0 chroma subsampling PSNR (overall and per-channel). Outputs per-image JSON files plus a suite summary JSON.
+
+### Verification
+
+All values are computed from raw 8-bit RGB pixel values with no preprocessing; any machine running the code will produce identical results.
+
 ## References
 
 1. Wallace, G.K. “The JPEG still picture compression standard.” *IEEE Transactions on Consumer Electronics* 38(1), 1992.
