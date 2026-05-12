@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20148225.svg)](https://doi.org/10.5281/zenodo.20148225)
 # Per-Image Decorrelation Efficiency of the BT.601 Fixed Transform
 
 **Measured Against KLT Ceiling Across the Kodak Lossless True Color Image Suite**
